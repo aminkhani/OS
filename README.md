@@ -17,6 +17,7 @@
 <br />
 <div align="center">
   <h1 align="center">Operating System (OS) Tutorial</h1>
+  <img src="Pic/operating_system.jpg">
   <p align="center"> 
     <br />
    <a href="https://github.com/aminkhani/OS/issues/new?assignees=&labels=bug&template=bug_report.yml&title=%5BBUG%5D%3A+">🐛Report Bug</a>
@@ -42,6 +43,8 @@
     <li><a href="#os_definition">OS Definition and Function</a></li>
     <li><a href="#structure_os">Structure of a Computer System</a></li>
     <li><a href="#os_do">What Does an OS Do?</a></li>
+    <li><a href="#computer_hardware">Computer Hardware Review</a></li>
+    <li><a href="#his_os">History of OS</a></li>
     <li><a href="#type_os">Types of OS</a>
       <ul>
         <li><a href="#batch_os">Batch OS</a></li>
@@ -57,6 +60,9 @@
 </ul>
 
 <h1 id="why_os">Why Study Operating Systems?</h1>
+
+- **Modern computer** consists of one or more **processors**, some **main memory**, **disks**, **printers**, a **keyboard**, a **mouse**, a **display**, **network interfaces**, and various other **input/output devices**. All in all, a **complex system**. If every application programmer had to understand how all these things work in detail, no code would ever get written. Furthermore, managing all these components and using them optimally is an **exceedingly challenging job**. For this reason, computers are equipped with a layer of **software** called the **operating system**.
+<br>
 
 - Although there are many practitioners of computer science, only a small percentage of them will be involved in the creation or modification of an operating system.
 <br>
@@ -112,7 +118,64 @@
 #### 6.Security
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<h1 id="computer_hardware">Computer Hardware Review</h1>
 
+- - **Operating system** is intimately tied to the **hardware** of the computer it runs on. It **extends** the **computer’s instruction set** and **manages its resources**.
+<br>
+<img src="Pic/copmuter_hardware.jpg">
+<br>
+
+- The **CPU**, **memory**, and **I/O devices** are all connected by a **system bus** and communicate with one another over it
+
+
+### 1. Processors
+  - The **brain** of the **computer** is the **CPU (Central Processing Unit)**. It **fetches instructions** from **memory** and **executes** them. 
+  <br>
+
+  - The basic **cycle** of every **CPU** is to **fetch** the **first instruction** from **memory**, **decode** it to **determine its type and operands**, **execute** it, and then **fetch**, **decode**, and **execute subsequent instructions**.
+  <br>
+
+  - The cycle is repeated **until** the **program finishes**. In this way, programs are **carried out**.
+  <br>
+
+  - All **CPUs contain** some **registers** inside to **hold key variables and temporary results**.
+  <br>
+
+  - Most computers have several special registers that are visible to the programmer. One of these is the **program counter (PC)**, which contains the **memory address of the next instruction** to be **fetched**.
+  <br>
+
+  - **Stack pointer (SP)**, which points to the **top of the current stack in memory**.
+  <br>
+
+  - **PSW (Program Status Word)**, this register contains the **condition code bits**, which are **set by comparison instructions**, the **CPU priority**, the **mode (user or kernel)**, and **various other control bits**.
+  <br>
+
+  - The **PSW** plays an **important role** in **system calls** and **I/O**.
+  <br>
+
+  - To **improve performance**, **CPU designers** have long **abandoned** the simple model of **fetching**, **decoding**, and **executing** **one instruction at a time**. Many **modern CPUs** have **facilities for executing** **more than one instruction** at the same time.
+    - For example, a **CPU** might have **separate fetch**, **decode**, and **execute units**, Such an organization is called a **pipeline**.
+  <br>
+  <img src="Pic/pipeline.jpg">
+  <br>
+
+  - Even **more advanced than** a **pipeline design** is a **superscalar CPU**. In this design, **multiple execution units** are present
+    - For example, one for integer arithmetic, one for floating-point arithmetic, and one for Boolean operations. Two or more instructions are fetched at once, decoded, and dumped into a holding buffer until they can be executed.
+
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<h1 id="his_os">Operating Systems - History</h1>
+
+- #### 1945 – 1955 : The First Generation, Vacuum Tubes and Plugboards
+
+- #### 1955 – 1965 : The Second Generation, Transistors and Batch Systems
+
+- #### 1965 - 1980 : The Third Generation, ICs and Multiprogramming
+- #### 1980 - Present : The Fourth Generation, Personal Computers
+- #### 1990 - Present : The Fifth Generation, Moblie Computets
+
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <h1 id="type_os">Types of Operating Systems</h1>
 
 - **Operating System** is a well-organized collection of programs that manages the computer hardware. It is a type of **system software** that is responsible for the smooth functioning of the computer system.
