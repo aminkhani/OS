@@ -43,8 +43,16 @@
     <li><a href="#os_definition">OS Definition and Function</a></li>
     <li><a href="#structure_os">Structure of a Computer System</a></li>
     <li><a href="#os_do">What Does an OS Do?</a></li>
-    <li><a href="#computer_hardware">Computer Hardware Review</a></li>
     <li><a href="#his_os">History of OS</a></li>
+    <li><a href="#basics_os">Basics of OS</a>
+      <ul>
+        <li><a href="#transistor">Trasistor</a></li>
+        <li><a href="#ic">IC</a></li>
+        <li><a href="#processor">Processor</a></li>
+        <li><a href="#cpu">CPU</a></li>
+        <li><a href="#microprocessor">Microprocessor</a></li>
+      </ul>
+    </li>
     <li><a href="#type_os">Types of OS</a>
       <ul>
         <li><a href="#batch_os">Batch OS</a></li>
@@ -118,52 +126,7 @@
 #### 6.Security
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
-<h1 id="computer_hardware">Computer Hardware Review</h1>
 
-- - **Operating system** is intimately tied to the **hardware** of the computer it runs on. It **extends** the **computer’s instruction set** and **manages its resources**.
-<br>
-<img src="Pic/copmuter_hardware.jpg">
-<br>
-
-- The **CPU**, **memory**, and **I/O devices** are all connected by a **system bus** and communicate with one another over it
-
-
-### 1. Processors
-  - The **brain** of the **computer** is the **CPU (Central Processing Unit)**. It **fetches instructions** from **memory** and **executes** them. 
-  <br>
-
-  - The basic **cycle** of every **CPU** is to **fetch** the **first instruction** from **memory**, **decode** it to **determine its type and operands**, **execute** it, and then **fetch**, **decode**, and **execute subsequent instructions**.
-  <br>
-
-  - The cycle is repeated **until** the **program finishes**. In this way, programs are **carried out**.
-  <br>
-
-  - All **CPUs contain** some **registers** inside to **hold key variables and temporary results**.
-  <br>
-
-  - Most computers have several special registers that are visible to the programmer. One of these is the **program counter (PC)**, which contains the **memory address of the next instruction** to be **fetched**.
-  <br>
-
-  - **Stack pointer (SP)**, which points to the **top of the current stack in memory**.
-  <br>
-
-  - **PSW (Program Status Word)**, this register contains the **condition code bits**, which are **set by comparison instructions**, the **CPU priority**, the **mode (user or kernel)**, and **various other control bits**.
-  <br>
-
-  - The **PSW** plays an **important role** in **system calls** and **I/O**.
-  <br>
-
-  - To **improve performance**, **CPU designers** have long **abandoned** the simple model of **fetching**, **decoding**, and **executing** **one instruction at a time**. Many **modern CPUs** have **facilities for executing** **more than one instruction** at the same time.
-    - For example, a **CPU** might have **separate fetch**, **decode**, and **execute units**, Such an organization is called a **pipeline**.
-  <br>
-  <img src="Pic/pipeline.jpg">
-  <br>
-
-  - Even **more advanced than** a **pipeline design** is a **superscalar CPU**. In this design, **multiple execution units** are present
-    - For example, one for integer arithmetic, one for floating-point arithmetic, and one for Boolean operations. Two or more instructions are fetched at once, decoded, and dumped into a holding buffer until they can be executed.
-
-
-<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <h1 id="his_os">Operating Systems - History</h1>
 
 - #### 1945 – 1955 : The First Generation, Vacuum Tubes and Plugboards
@@ -176,6 +139,192 @@
 
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
+<h1 id="basics_os">Basics of Operating System</h1>
+
+- Some **basic knowledge of the structure of Computer System** is **required** to **understand how Operating System works**. 
+<br>
+
+- **Operating system** is intimately tied to the **hardware** of the computer it runs on. It **extends** the **computer’s instruction set** and **manages its resources**.
+<br>
+<img src="Pic/copmuter_hardware.jpg">
+<br>
+
+- The **CPU**, **memory**, and **I/O devices** are all connected by a **system bus** and communicate with one another over it
+
+<span id="transistor"></span>
+
+## 1. Transistor
+- A **transistor** is a **[semiconductor device](https://en.wikipedia.org/wiki/Semiconductor_device)** used to **amplify** or **switch electrical signals** and **power**. 
+<br>
+
+- A **transistor** is a **binary switch** and the **fundamental building block** of **computer circuitry**.
+  - The **transistor** either **prevents or allows** **current** to flow through.
+<br>
+
+- A **single modern CPU** can have **hundreds of millions** or even **billions** of **transistors**.
+
+<div align="right">
+<a href="https://en.wikipedia.org/wiki/Semiconductor_device"><img src="https://img.shields.io/badge/Read More-green?style=for-the-badge"></a>
+<a href="#top"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white"></a>
+</div>
+
+<span id="ic"></span>
+
+## 2. Integrated Circuit (IC)
+- An **integrated circuit** or **monolithic integrated circuit** (also referred to as an **IC**, a **chip**, or a **microchip**) is a **set of electronic circuits** on one **small flat piece** (or **chip**) of **semiconductor material**, usually **silicon**.
+<br>
+
+- On which **thousands or millions of tiny** **resistors**, **capacitors**, **diodes** and **transistors** are fabricated.
+
+<span id="processor"></span>
+
+## 3. Processor
+- In **computing** and **computer science**, a **processor** or **processing unit** is an **electrical component (digital circuit)** that **performs operations** on an **external data source**, usually **memory** or some other data stream.
+<br>
+
+- It typically takes the form of a **microprocessor**. Today, processors use built-in transistors.
+<br>
+
+- Like a **soul in our body** keeps us alive so that the **processor** does in the computer.
+- ### Moore's law:
+  - **Moore's law**, named after **[Gordon Moore](https://en.wikipedia.org/wiki/Gordon_Moore)**, is the **observation** and **projection** via historical trend that the **number of transistors** in **integrated circuits (IC)**, and therefore processors by extension, **doubles every two years**. The progress of processors has followed Moore's law closely.
+
+- ### Types of Processors:
+  - **[CPU](#4-cpu-central-processing-unit)**
+  - **[GPU]()**
+  - **[TPU]()**
+  - **[PPU]()**
+  - **[SPE or SPU]()**
+
+<div align="right">
+<a href="https://en.wikipedia.org/wiki/Semiconductor_device"><img src="https://img.shields.io/badge/Read More-green?style=for-the-badge"></a>
+<a href="#top"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white"></a>
+</div>
+
+<span id="cpu"></span>
+
+## 4. CPU (Central Processing Unit)
+<img src="Pic/Processor.jpg"><br>
+
+- The **brain** of the **computer** is the **CPU (Central Processing Unit)**. It **fetches instructions** from **memory** and **executes** them. 
+  <br>
+
+- The basic **cycle** of every **CPU** is to **fetch** the **first instruction** from **memory**, **decode** it to **determine its type and operands**, **execute** it, and then **fetch**, **decode**, and **execute subsequent instructions**.
+<br>
+
+- The cycle is repeated **until** the **program finishes**. In this way, programs are **carried out**.
+<br>
+
+- All **CPUs contain** some **registers** inside to **hold key variables and temporary results**.
+<br>
+
+- Most computers have several special registers that are visible to the programmer. One of these is the **program counter (PC)**, which contains the **memory address of the next instruction** to be **fetched**.
+<br>
+
+- **Stack pointer (SP)**, which points to the **top of the current stack in memory**.
+<br>
+
+- **PSW (Program Status Word)**, this register contains the **condition code bits**, which are **set by comparison instructions**, the **CPU priority**, the **mode (user or kernel)**, and **various other control bits**.
+<br>
+
+- The **PSW** plays an **important role** in **system calls** and **I/O**.
+<br>
+
+- To **improve performance**, **CPU designers** have long **abandoned** the simple model of **fetching**, **decoding**, and **executing** **one instruction at a time**. Many **modern CPUs** have **facilities for executing** **more than one instruction** at the same time.
+  - For example, a **CPU** might have **separate fetch**, **decode**, and **execute units**, Such an organization is called a **pipeline**.
+<br>
+<img src="Pic/pipeline.jpg">
+<br>
+
+- Even **more advanced than** a **pipeline design** is a **superscalar CPU**. In this design, **multiple execution units** are present
+  - For example, one for integer arithmetic, one for floating-point arithmetic, and one for Boolean operations. Two or more instructions are fetched at once, decoded, and dumped into a holding buffer until they can be executed.
+<br>
+<img src="Pic/superscalar.jpg">
+<br>
+
+
+- A **processor** is any component that processes commands, reads, and writes data. A **CPU** is a **Central Processing Unit**, and the **main processor** in a computer.
+  -  Many different computer components, like hard drives, have processors but the CPU is the most important processor in a computer and controls everything.
+<br>
+
+- **Central processing units (CPUs)** are the **primary processors** in most computers. They are designed to **handle a wide variety** of **general computing tasks** rather than only a few domain-specific tasks.
+<br>
+
+- The **CPU** is a **microprocessor**. The **microprocessor** is an **integrated circuit (IC)** that is **made up of millions of transistors**. However, not all **microprocessors are CPUs**. There are **NPUs**, **GPUs** and **APUs** that remove network, graphics or audio processing from the **CPU**. 
+<br>
+
+- The CPU is not slowed down by operations that can be done by outside microprocessors; and since all are working in conjunction, the results are displayed faster, more robustly and with less breakup or downtime.
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
+<span id="microprocessor"></span>
+
+## 5. Microprocessor
+<img src="Pic/Microprocessor.jpg"><br>
+
+- A **microprocessor** is a **computer processor** where the **data processing logic** and **control** is included on a **single integrated circuit (IC)**, or a **small number of integrated circuits**.
+<br>
+
+- The **microprocessor** contains the **arithmetic**, **logic**, and **control circuitry** **required to perform the functions** of a **computer's central processing unit**.
+<br>
+
+- The **integrated circuit (IC)** is capable of **interpreting and executing program instructions** and performing arithmetic operations.
+<br>
+
+- Microprocessor is the latest form of processor or CPU. The microprocessor is a single-chip circuit integrated with all qualities of CPU with few new circuits. Its processing speed is greater than CPU. Today all latest processor CPUs are a microprocessor.
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+### Key Differences between Processor and Microprocessor
+
+1. Processor or CPU is capable of performing all kinds of computing and arithmetic functions while microprocessor deals in BIOS & memory circuits in addition to performing all CPU functions.
+<br>
+
+2. Microprocessor functions are greater than the processor. In addition to processor qualities, some graphic processor units (GPU), sound cards and internet cards are also included in it.
+<br>
+
+3. Microprocessor is the latest and upgraded version of processor/CPU.
+<br>
+
+4. Although microprocessor is the latest and advanced technology but still the main processing function of the computer is controlled by the processor.
+<br>
+
+5. The new function of audio processing which helps in producing clear audio is stored in a sound card of the microprocessor which was previously not available in the processor.
+<br>
+
+6. Due to the addition of different processors on a microprocessor, its speed is slower than the processor.
+<br>
+
+7. CPUs/processors can be microprocessor but all microprocessors are not CPU.
+<br>
+
+8. CPU is the main part of the computer while the microprocessor is a simple chip on the motherboard.
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
+## 6. Memory
+  - The **second major component** in any computer is the **memory**.
+  <br>
+
+  - The memory system is constructed as a hierarchy of layers.
+  <br>
+  <img src="Pic/memory.jpg">
+  <br>
+
+  - The **top layer** consists of the **registers internal** to the CPU. They are made of the same material as the CPU and are thus just **as fast as the CPU**. Consequently, there is no delay in accessing them. The storage capacity available in them is typically 32 × 32 bits on a 32-bit CPU and 64 × 64 bits on a 64-bit CPU. Less than 1 KB in both cases. Programs must manage the registers (i.e., decide what to keep in them) themselves, in software.
+  <br>
+
+  - **Cache memory**, which is mostly **controlled** by the **hardware**. **Main memory** is **divided up** into **cache lines**, typically **64 bytes**, with addresses 0 to 63 in cache line 0, 64 to 127 in cache line 1, and so on. The most heavily used cache lines are kept in a high-speed cache located inside or very close to the CPU. When the program needs to read a memory word, the cache hardware checks to see if the line needed is in the cache. If it is, called a **cache hit**.
+    - **Cache hits** normally take about **two clock cycles**.
+   <br>
+
+  - Cache memory is limited in size due to its high cost. Some machines have two or even three levels of cache, each one slower and bigger than the one before it.
+
+  
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
+
+
 <h1 id="type_os">Types of Operating Systems</h1>
 
 - **Operating System** is a well-organized collection of programs that manages the computer hardware. It is a type of **system software** that is responsible for the smooth functioning of the computer system.
