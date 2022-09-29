@@ -76,30 +76,24 @@
 
 <h1 id="why_os">Why Study Operating Systems?</h1>
 
-- **Modern computer** consists of one or more **processors**, some **main memory**, **disks**, **printers**, a **keyboard**, a **mouse**, a **display**, **network interfaces**, and various other **input/output devices**. All in all, a **complex system**. If every application programmer had to understand how all these things work in detail, no code would ever get written. Furthermore, managing all these components and using them optimally is an **exceedingly challenging job**. For this reason, computers are equipped with a layer of **software** called the **operating system**.
+- **Modern computer** consists of one or more **[processors](#3-processor)**, some **[main memory](#7-memory)**, **disks**, **printers**, a **keyboard**, a **mouse**, a **display**, **network interfaces**, and various other **input/output devices**. All in all, a **complex system**. If every application programmer had to understand how all these things work in detail, no code would ever get written. Furthermore, managing all these components and using them optimally is an **exceedingly challenging job**. For this reason, computers are equipped with a layer of **software** called the **operating system**.
 <br>
 
-- Although there are many practitioners of computer science, only a small percentage of them will be involved in the creation or modification of an operating system.
+- **Simply because**, as almost **all code runs on top of an operating system**, knowledge of **how operating systems work** is **crucial** to **proper**, **efficient**, **effective**, and **secure** **programming**. 
 <br>
 
-- Simply because, as almost all code runs on top of an operating system, knowledge of how operating systems work is crucial to proper, efficient, effective, and secure programming. 
-<br>
-
-- Understanding the fundamentals of operating systems, how they drive computer hardware, and what they provide to applications is not only essential to those who program them but also highly useful to those who write programs on them and use them.
+- Understanding the **fundamentals of operating systems**, how they drive computer hardware, and what they provide to applications is not only essential to those who program them but also highly useful to those who **write programs on them and use them**.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h1 id="os_definition">Operating System Definition and Function</h1>
 
-- In the **Computer System** (comprises of **Hardware** and **Software**), **Hardware** can only understand **machine code** (in the form of **0** and **1**) which doesn't make any sense to a naive user.
-<br>
-
-- We need a system which can act as an **intermediary** and manage all the **processes** and **resources** present in the system.
+- In the **Computer System** (comprises of **Hardware** and **Software**), **Hardware** can only understand **machine code** (in the form of **0** and **1**) which doesn't make any sense to a naive user. We need a system which can act as an **intermediary** and manage all the **processes** and **resources** present in the system.
 <br>
 <img src="Pic/os-definition-and-functions.png">
 <br>
 
-- An **Operating System** can be defined as an **interface between user and hardware**. It is **responsible** for the **execution** of all the **processes**, **Resource Allocation**, **CPU management**, **File Management** and many other tasks.
+- An **Operating System** can be defined as an **interface between user and hardware**. It is **responsible** for the **execution** of all the **processes**, **Resource Allocation**, **[CPU](#4-cpu-central-processing-unit) management**, **File Management** and many other tasks.
 <br>
 
 - The **purpose** of an operating system is to **provide an environment** in which a user can **execute programs** in **convenient and efficient manner**.
@@ -143,7 +137,8 @@
 - #### 1990 - Present : The Fifth Generation, Moblie Computets
 
 
-<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<div align="right"><a href="https://github.com/aminkhani/OS/blob/main/history.md"><img src="https://img.shields.io/badge/Read More-green?style=for-the-badge">
+<a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h1 id="basics_os">Basics of Operating System</h1>
 
@@ -202,7 +197,7 @@
 
 - ### Types of Processors:
   - **[CPU](#4-cpu-central-processing-unit)**
-  - **[GPU]()**
+  - **[GPU](#6-graphics-processing-unit-gpu)**
   - **[TPU]()**
   - **[PPU]()**
   - **[SPE or SPU]()**
@@ -237,10 +232,8 @@
 - All **CPUs contain** some **registers** inside to **hold key variables and temporary results**.
 <br>
 
-
 ### CPU Structure
 <img src="Pic/computer_architecture.jpg">
-<br>
 
 - #### Registers
   - **Registers** are parts of the **CPU** that can **store data**.
@@ -284,26 +277,28 @@
 
   - **ALU** is responsible for performing **arithmetic** and **logical functions** or **operations**. It consists of two subsections, which are:
     1. **Arithmetic Section**
-       - By arithmetic operations, we mean operations like addition, subtraction, multiplication, and division, and all these operation and functions are performed by ALU. Also, all the complex operations are done by making repetitive use of the mentioned operations by ALU
+       - By **arithmetic operations**, we mean operations like **addition**, **subtraction**, **multiplication**, and **division**, and all these operation and functions are performed by **ALU**. Also, all the complex operations are done by making repetitive use of the mentioned operations by **ALU**.
     <br> 
 
     2. **Logic Section**
-       - By Logical operations, we mean operations or functions like selecting, comparing, matching, and merging the data, and all these are performed by ALU. 
+       - By **Logical operations**, we mean operations or functions like **selecting**, **comparing**, **matching**, and **merging** the data, and all these are performed by ALU. 
     <br> 
 
-> **Note:** CPU may contain more than one ALU and ALUs can be used for maintaining timers that help run the computer system.
+> **Note:** **CPU** may contain **more than one ALU and ALUs** can be used for maintaining timers that help run the computer system.
   
 <br>
 
 - **Control Unit (CU)**
-  - The control unit decodes what each instruction means, and can then controls how the other components operate.
+  - The **control unit decodes** what each **instruction means**, and can then controls how the other components operate.
   <br>
-  - when the control unit receives an instruction, which is just a binary number, it will then signal what the ALU and memory is supposed to do
+
+  - when the control unit receives an instruction, which is just a **binary number**, it will then **signal what the ALU and memory** is supposed to do.
   <br>
 
 - **Memory**
-  - The RAM stores both the instructions that the computer needs to perform, and the data on which to perform it.
+  - The **RAM stores** both the instructions that the computer needs to perform, and the data on which to perform it.
 <br>
+
 
 - **Buses**
   - All of these components are connected together by bundles of wires that are collectively known as buses. So there is a bus to carry data, another for addresses, and another for instructions.
@@ -315,13 +310,10 @@
 > This method of putting together a computer is known as the **[Von Neumann](https://en.wikipedia.org/wiki/Von_Neumann_architecture)** Architecture. It was devised by John von Neumann in about 1945, well before any of the components that would be needed to produce it had actually been invented.
 
 
-
 <div align="right">
 <a href="https://en.wikipedia.org/wiki/Central_processing_unit"><img src="https://img.shields.io/badge/Read More-green?style=for-the-badge"></a>
 <a href="#top"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white"></a>
 </div>
-
-
 <span id="microprocessor"></span>
 
 ## 5. Microprocessor
@@ -443,7 +435,6 @@
 
 - ## Interrupts
   - An **interrupt** is a **signal** to the **processor** **emitted by hardware or software** indicating an **event** that needs **immediate attention**. Whenever an interrupt occurs, the **controller completes the execution** of the **current instruction** and starts the execution of an **Interrupt Service Routine (ISR)** or **Interrupt Handler**.
-<br>
 
   - #### Classes of Interrupts
     - **Program**
@@ -477,6 +468,11 @@
 - In the **1970s**, **Batch processing** was very popular. In this technique, **similar types of jobs** were **batched together** and executed in time.
 <br>
 
+- This type of **operating system** **does not interact with the computer directly**.
+<br>
+<img src="Pic/BatchOS.jpeg">
+<br>
+
 - In **Batch operating system**, **access** is given to **more than one person**; they submit their respective jobs to the system for the execution.
 <br>
 
@@ -489,28 +485,51 @@
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <h2 id="multi_os">Multiprogramming Operating System</h2>
 
-- **Multiprogramming** is an **extension** to **batch processing** where the **CPU** is always **kept busy**. **Each process** needs two types of **system time**: 
-  1. **CPU time**
-  2. **IO time**
+- A **Multiprogramming Operating System** **runs multiple programs** on a **single processor**.
 <br>
 
-- In a **multiprogramming environment**, when a process does its I/O, The CPU can start the execution of other processes. Therefore, multiprogramming improves the efficiency of the system.
+- **Multiprogramming** is an **extension** to **batch processing** where the **CPU** is always **kept busy**. **Each process** needs two types of **system time**: 
+  1. **CPU time**
+  2. **I/O time**
+<br>
+<img src="Pic/multiprogramming.png">
+<br>
+
+- In a **multiprogramming environment**, when a process does its I/O, The CPU can start the execution of other processes. Therefore, **multiprogramming** **improves** the **efficiency** of the system.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h2 id="multipro_os">Multiprocessing Operating System</h2>
 
 - In **Multiprocessing**, **Parallel computing** is achieved. There are **more than one processors**   present in the system which can execute more than one process at the same time. This will increase the throughput of the system.
-
+<br>
+<img src="Pic/multiprocessing.jpg">
+<br>
 <img src="Pic/multiprocessing-operating-system2.png">
+<br>
+<img src="Pic/Symmetric-Multiprocessing-Vs-Asymmetric-Multiprocessing.jpg">
 <br>
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <h2 id="multitask_os">Multitasking Operating System</h2>
 
 - The **multitasking operating system** is a **logical extension of a multiprogramming system** that enables **multiple programs** simultaneously. It allows a user to perform more than one computer task at the same time.
 <br>
+
+- While a **multiprogramming operating system** allows **more than one program** to **run** simultaneously using a **single CPU**, a **multitasking operating system** allows **multiple processes** or **tasks** to be **executed** at the same time utilizing multiple CPUs.
+<br>
+<img src="Pic/Multitasking-in-operating-system.png">
+<br>
+<img src="Pic/2.webp">
+<br>
 <img src="Pic/multitasking-operating-system2.png">
 <br>
+
+- In **preemptive multitasking**, the **operating system** can initiate a context **switching** from the running process to another process. In other words, the operating system **allows stopping the execution of the currently running process and allocating the CPU** to some other process.
+<br>
+
+- In **cooperative multitasking**, the operating system never initiates context switching from the running process to another process. A context switch occurs only when the processes voluntarily yield control periodically or when idle or logically blocked to allow multiple applications to execute simultaneously. Also, in this multitasking, all the processes cooperate for the scheduling scheme to work.
+
+
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <h2 id="net_os">Network Operating Systems</h2>
 
@@ -594,4 +613,6 @@
 <br>
 
 - Protocol overhead can dominate computation cost.
+
+
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
